@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title> Client </title>
+        <script>
+            function envoi(){
+                var body = {"URI":document.getElementById('IdURI').value,"Commentaire":document.getElementById('IdCommentaire').value};
+                var route = "/annotation";
+                fetch(route, {  method:'POST',
+                                body: JSON.stringify(body),
+                                headers:{'Content-Type':'application/json'},
+                                mode:"cors",
+                                cache:'default'}).then(
+                                    function(res){
+                                        window.location.reload();
+                                    });
+            }
+        </script>
+    </head>
+    <body>
+        <form autocomplete="off">
+            <p>
+                <label for="URI">URI :</label>
+                <input type="text" name="URI" id="URI" placeholder="" size="30" maxlength="20">
+            </p>
+            <p>
+                <label for="Commentaire">Des conseils pour améliorer mon site ?</label>
+                <textarea name="Commentaire" id="Commentaire" size="30"></textarea>
+            </p>
+            <p>
+                <button onclick="envoi()" type="button"
+                <input type="" onclick="envoi()" value="Envoyer">
+            </p>
+        </form>
+
+    </body>
+</html>
