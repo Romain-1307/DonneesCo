@@ -8,10 +8,7 @@
                 var body = {"URI":document.getElementById('IdURI').value,"Commentaire":document.getElementById('IdCommentaire').value};
                 var route = "/annotation";
                 fetch(route, {  method:'POST',
-                                body: JSON.stringify(body),
-                                headers:{'Content-Type':'application/json'},
-                                mode:"cors",
-                                cache:'default'}).then(
+                                body: JSON.stringify(body)}).then(
                                     function(res){
                                         window.location.reload();
                                     });
@@ -26,7 +23,7 @@
             </p>
             <p>
                 <label for="Commentaire">Des conseils pour améliorer mon site ?</label>
-                <textarea name="Commentaire" id="Commentaire" size="30"></textarea>
+                <textarea name="Commentaire" id="IdCommentaire" size="30"></textarea>
             </p>
             <p>
                 <button onclick="envoi()" type="button"
