@@ -8,8 +8,8 @@
 			function envoi(){
 				var body = {"URI":document.getElementById('IdURI').value, 
 							"Commentaire":document.getElementById('IdCommentaire').value};
-				<!-- console.log(body); -->
-				<!-- var route = "http://localhost:3000/annotation"; -->
+				// console.log(body); 
+				// var route = "http://localhost:3000/annotation";
 				var route = "/annotation";
 				fetch(route, {    method:'POST', 
 								  body: JSON.stringify(body) ,
@@ -18,7 +18,7 @@
 							}).then(
 					function(res){ 
 						window.location.reload();
-						<!-- console.log(body); -->
+						// console.log(body);
 					});
 			}
 		
