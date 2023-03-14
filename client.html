@@ -23,7 +23,7 @@
 				if (isURL(document.getElementById('IdURI').value)){
 					var body = {"URI":document.getElementById('IdURI').value, 
 								"Commentaire": document.getElementById('IdCommentaire').value};
-					<!-- console.log(body); -->
+					// console.log(body);
 					var route = "/annotation";
 					fetch(route, {    method:'POST', 
 									  body: JSON.stringify(body) ,
@@ -31,12 +31,12 @@
 									  //mode:"cors", 
 								}).then(
 						function(res){ 
-							<!-- console.log(res); -->
-							<!-- document.getElementById('IdRes').innerHTML=""; -->
+							// console.log(res); 
+							// document.getElementById('IdRes').innerHTML=""; 
 							document.getElementById('IdURI').value="";
 							document.getElementById('IdCommentaire').value="";
-							<!-- window.location.reload(); -->
-							<!-- console.log(body); -->
+							// window.location.reload(); 
+							// console.log(body); 
 						});
 				}
 				else {
