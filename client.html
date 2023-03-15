@@ -27,11 +27,10 @@
 								"Commentaire": document.getElementById('IdCommentaire').value};
 					// console.log(body);
 					// var route = "/annotation";
-					var route = "https://projetdonneesconnectees.onrender.com/annotation"
+					var route = "https://projetdonneesconnectees.onrender.com/annotation";
 					fetch(route, {    method:'POST', 
 									  body: JSON.stringify(body) ,
 									  headers:{'Content-Type': 'application/json'}
-									  ,mode:"cors"
 								}).then((res) => res.text()).then((text) => {
 																				document.getElementById('IdURI').value="";
 																				document.getElementById('IdCommentaire').value="";
@@ -70,42 +69,42 @@
 			
 			
 			
-			/* function envoiURI(){
+			/* function envoiURI(){ -->
 				
-				var AnnotURI = document.getElementById('AnnotURI').value;
-				var FormatAnnotURI = document.getElementById('FormatAnnotURI').value;
+				<!-- var AnnotURI = document.getElementById('AnnotURI').value; -->
+				<!-- var FormatAnnotURI = document.getElementById('FormatAnnotURI').value; -->
 				
-				if (FormatAnnotURI=='json'){
-					FormatAnnotURI='application/'+FormatAnnotURI;
-				}
-				else {
-					FormatAnnotURI='text/'+FormatAnnotURI;
-				}
+				<!-- if (FormatAnnotURI=='json'){ -->
+					<!-- FormatAnnotURI='application/'+FormatAnnotURI; -->
+				<!-- } -->
+				<!-- else { -->
+					<!-- FormatAnnotURI='text/'+FormatAnnotURI; -->
+				<!-- } -->
 
-				var route = "/URI/"+AnnotURI;
-				fetch(route, {method:'GET', 
-							  headers : {'accept' : FormatAnnotURI}//, mode:"cors", 
-							  });
-			}; */
+				<!-- var route = "/URI/"+AnnotURI; -->
+				<!-- fetch(route, {method:'GET',  -->
+							  <!-- headers : {'accept' : FormatAnnotURI}//, mode:"cors",  -->
+							  <!-- }); -->
+			<!-- }; */
 			
 			
 			
-			/* function envoiAllAnnot(){
+			/* function envoiAllAnnot(){ -->
 
-				var FormatAllAnnot = document.getElementById('FormatAllAnnot').value;
+				<!-- var FormatAllAnnot = document.getElementById('FormatAllAnnot').value; -->
 				
-				if (FormatAllAnnot=='json'){
-					FormatAllAnnot='application/'+FormatAllAnnot;
-				}
-				else {
-					FormatAllAnnot='text/'+FormatAllAnnot;
-				}
+				<!-- if (FormatAllAnnot=='json'){ -->
+					<!-- FormatAllAnnot='application/'+FormatAllAnnot; -->
+				<!-- } -->
+				<!-- else { -->
+					<!-- FormatAllAnnot='text/'+FormatAllAnnot; -->
+				<!-- } -->
 
-				var route = "/AllAnnot";
-				fetch(route, {method:'GET', 
-							  headers : {'accept' : FormatAllAnnot}
-							  });
-			}; */
+				<!-- var route = "/AllAnnot"; -->
+				<!-- fetch(route, {method:'GET',  -->
+							  <!-- headers : {'accept' : FormatAllAnnot} -->
+							  <!-- }); -->
+			<!-- }; */
 			
 
 		</script>
