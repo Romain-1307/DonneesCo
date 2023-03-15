@@ -1,12 +1,12 @@
 {
-  "name": "donneesconnectees",
+  "name": "DonneesCo",
   "version": "1.0.0",
-  "description": "projet du prof super cool",
+  "description": "projet API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "moi",
+  "author": "Romain",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
