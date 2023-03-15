@@ -25,8 +25,8 @@
 				if (isURL(document.getElementById('IdURI').value)){
 					var body = {"URI": document.getElementById('IdURI').value, 
 								"Commentaire": document.getElementById('IdCommentaire').value};
-					<!-- console.log(body); -->
-					<!-- var route = "/annotation"; -->
+					// console.log(body);
+					// var route = "/annotation";
 					var route = "https://projetdonneesconnectees.onrender.com/annotation"
 					fetch(route, {    method:'POST', 
 									  body: JSON.stringify(body) ,
