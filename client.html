@@ -27,7 +27,7 @@
 					var body = {"URI": id_uri_a_envoye, 
 								"Commentaire": document.getElementById('id_commentaire_a_envoye').value};
 					// var route = "/ajout_commentaire";
-					var route = "https://projetdonneesconnectees.onrender.com/ajout_commentaire";
+					var route = "https://romainwebservice.onrender.com/ajout_commentaire";
 					fetch(route, {    method:'POST', 
 									  body: JSON.stringify(body) ,
 									  headers:{'Content-Type': 'application/json'}, 
@@ -61,7 +61,7 @@
 				}
 
 				// var route = "/acces_commentaire/"+id_commentaire_a_acceder;
-				var route = "https://projetdonneesconnectees.onrender.com/acces_commentaire/"+id_commentaire_a_acceder;
+				var route = "https://romainwebservice.onrender.com/acces_commentaire/"+id_commentaire_a_acceder;
 				fetch(route, {method:'GET', 
 							  headers : {'accept' : format_acces_commentaire}
 							  });
@@ -118,7 +118,7 @@
 		
 		<h1>Acceder à tous les commentaires</h1>
 		<!-- <form action="/commentaires_de_uri" method="GET" autocomplete="off"> -->
-		<form action="https://projetdonneesconnectees.onrender.com/commentaires_de_uri" method="GET" autocomplete="off">
+		<form action="https://romainwebservice.onrender.com/commentaires_de_uri" method="GET" autocomplete="off">
 			<input name="uri_extrac_commentaires" type="hidden" value="tous">
 			<p>
 				<label>Choisissez le format de réponse</label><br>
@@ -136,7 +136,7 @@
 		
 		<h1>Acceder aux annotations d'une URI</h1>
 		<!-- <form action="/commentaires_de_uri" method="GET" autocomplete="off"> -->
-		<form action="https://projetdonneesconnectees.onrender.com/commentaires_de_uri" method="GET" autocomplete="off">
+		<form action="https://romainwebservice.onrender.com/commentaires_de_uri" method="GET" autocomplete="off">
 			<p>
 				<label>URI :</label>
 				<input type="text" name="uri_extrac_commentaires" placeholder="" size="30">
